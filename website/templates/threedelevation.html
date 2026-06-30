@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container py-5">
+
+    <h1 class="text-center mb-4">3D Elevation Design</h1>
+
+    <p>
+        3D Elevation is a realistic visual representation of your home's exterior.
+        It helps you see how your house will look after construction.
+    </p>
+
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <img src="{% static 'images/3d1.jpg' %}" class="img-fluid rounded shadow">
+        </div>
+
+        <div class="col-md-4">
+            <img src="{% static 'images/3d2.jpg' %}" class="img-fluid rounded shadow">
+        </div>
+
+        <div class="col-md-4">
+            <img src="{% static 'images/3d3.jpg' %}" class="img-fluid rounded shadow">
+        </div>
+    </div>
+
+    <h3 class="mt-5">Why is 3D Elevation Important?</h3>
+
+    <ul>
+        <li>Visualize your dream home before construction.</li>
+        <li>Choose colors and materials confidently.</li>
+        <li>Understand the final appearance of the building.</li>
+        <li>Avoid costly design changes later.</li>
+        <li>Improve overall aesthetics and planning.</li>
+    </ul>
+
+    <h3 class="mt-4">Our Process</h3>
+
+    <ol>
+        <li>Study the approved 2D floor plan.</li>
+        <li>Create a realistic exterior model.</li>
+        <li>Add textures, colors, and materials.</li>
+        <li>Generate high-quality 3D views.</li>
+        <li>Finalize after client approval.</li>
+    </ol>
+
+</div>
+
+{% endblock %}

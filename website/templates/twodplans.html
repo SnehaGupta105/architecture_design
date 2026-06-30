@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container py-5">
+
+    <h1 class="text-center mb-4">2D Floor Plans</h1>
+
+    <p>
+        A 2D floor plan is a detailed drawing of a house layout viewed from above.
+        It shows the arrangement of rooms, doors, windows, kitchen, washroom,
+        staircase, and other important areas.
+    </p>
+
+    <div class="row mt-4">
+
+        <div class="col-md-4">
+            <img src="{% static 'images/plot3.jpg' %}"
+                 class="img-fluid rounded shadow">
+        </div>
+
+        <div class="col-md-4">
+            <img src="{% static 'images/house9.jpg' %}"
+                 class="img-fluid rounded shadow">
+        </div>
+
+        <div class="col-md-4">
+            <img src="{% static 'images/2d3.jpg' %}"
+                 class="img-fluid rounded shadow">
+        </div>
+
+    </div>
+
+    <h3 class="mt-5">Why is a 2D Plan Important?</h3>
+
+    <ul>
+        <li>Helps understand room arrangement.</li>
+        <li>Proper space utilization.</li>
+        <li>Easy communication with engineers and builders.</li>
+        <li>Reduces construction mistakes.</li>
+        <li>Provides clear measurements before construction.</li>
+    </ul>
+
+    <h3 class="mt-4">Our Process</h3>
+
+    <ol>
+        <li>Collect plot dimensions.</li>
+        <li>Understand client requirements.</li>
+        <li>Create layout and room placement.</li>
+        <li>Add doors, windows, staircase and utilities.</li>
+        <li>Finalize the plan with client approval.</li>
+    </ol>
+
+</div>
+
+{% endblock %}

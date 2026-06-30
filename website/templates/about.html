@@ -1,0 +1,193 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+.about-hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("/static/images/about-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: #152f68;
+    color: lightblue;
+    padding: 100px 20px;
+    text-align: center;
+    font-style: oblique;
+}
+
+.about-hero h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.about-hero p {
+    font-size: 18px;
+}
+
+.about-img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* BUTTON */
+.btn-custom {
+    background: #d4a017;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-custom:hover {
+    background: #b8860b;
+}
+
+/* INFO BOX */
+.info-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+
+    /* Professional Shadow */
+    box-shadow: 0 12px 30px rgba(35, 4, 85, 0.18);
+
+    transition: all 0.4s ease;
+    height: 100%;
+}
+
+.info-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(197, 11, 11, 0.25);
+}
+/* SECTION TITLE */
+.section-title {
+    text-align: center;
+    font-weight: bold;
+    margin: 60px 0 30px;
+}
+
+/* STATS */
+.stats {
+    background: #111827;
+    color: white;
+    padding: 60px 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.stats h2 {
+    color: #d4a017;
+    font-size: 40px;
+}
+
+
+
+</style>
+
+<div class="about-hero">
+    <div class="container text-center">
+        <h1>About Gupta Building Designer</h1>
+        <p>Crafting Smart, Modern & Vastu-Perfect Living Spaces</p>
+    </div>
+</div>
+
+<div class="container py-5">
+
+    <div class="row align-items-center">
+
+        <div class="col-md-6">
+            <img src="{% static 'images/house2.jpg' %}" class="about-img">
+        </div>
+
+        <div class="col-md-6">
+            <h2>Building Dreams with Trust, Experience & Innovation</h2>
+            <p>
+                Since <b>2000, Gupta Building Designer</b> has been dedicated to creating modern, functional, and Vastu-compliant architectural designs under the expert guidance of<b> Er. Arvind Kumar Gupta.</b> With over two decades of experience, the firm has earned a strong reputation for designing beautiful, practical, and cost-effective homes that perfectly match the needs and lifestyles of clients.
+            </p>
+
+            <p>
+               Over the years, we have successfully designed <b>hundreds of residential homes </b>across <b>Banda and the surrounding areas,</b> delivering innovative layouts, elegant elevations, and well-planned living spaces. Our commitment to quality, creativity, and customer satisfaction has made us a trusted name in residential building design.
+            </p>
+            <p>
+                Today, the legacy continues with <b>Er. Harsh Gupta, a B.Tech Graduate in Civil Engineering,</b> who combines technical expertise with modern architectural trends and advanced planning techniques. By blending years of experience with fresh ideas and the latest design concepts, we ensure that every project reflects excellence, functionality, and timeless beauty.
+            </p>
+            <p>
+                At <b>Gupta Building Designer,</b> we believe that every home is more than just a building—it's a dream, a lifelong investment, and a place where memories are created. Our mission is to transform your vision into reality through creative design, precise planning, and personalized service.
+            </p>
+            <a href="/contact/" class="btn btn-custom">Contact Us</a>
+        </div>
+
+    </div>
+</div>
+
+<div>
+    <h2>Why Choose Us?</h2>
+    <ul>
+        <li>✅ 25+ Years of Experience</li>
+        <li>✅ Modern & Vastu-Based Home Designs</li>
+        <li>✅ Expert 2D Floor Plans & 3D Elevations</li>
+        <li>✅ Innovative Interior & Exterior Design Solutions</li>
+        <li>✅ Personalized Planning for Every Client</li>
+        <li>✅ Trusted by Families Across Banda & Nearby Areas</li> 
+        <li>✅ Commitment to Quality, Accuracy & Customer Satisfaction</li>
+    </ul>
+</div>
+
+<!-- MISSION VISION -->
+<div class="container">
+
+    <h2 class="section-title">Our Mission & Vision</h2>
+
+    <div class="row g-4">
+
+        <div class="col-md-6">
+            <div class="info-box">
+                <h4>🎯 Mission</h4>
+                <p>To provide affordable and modern architectural design solutions.</p>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="info-box">
+                <h4>🌍 Vision</h4>
+                <p>To become a trusted design studio known for creativity and quality.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- STATS -->
+<div class="stats mt-5">
+
+    <div class="container">
+        <div class="row text-center">
+
+            <div class="col-md-3">
+                <h2>100+</h2>
+                <p>Projects</p>
+            </div>
+
+            <div class="col-md-3">
+                <h2>80+</h2>
+                <p>Clients</p>
+            </div>
+
+            <div class="col-md-3">
+                <h2>5+</h2>
+                <p>Years Experience</p>
+            </div>
+
+            <div class="col-md-3">
+                <h2>24/7</h2>
+                <p>Support</p>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

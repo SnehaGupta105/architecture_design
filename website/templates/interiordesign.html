@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container py-5">
+
+    <h1 class="text-center mb-4">Interior Design</h1>
+
+    <p>
+        Interior design focuses on creating beautiful, functional,
+        and comfortable living spaces that match your lifestyle.
+    </p>
+
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <img src="{% static 'images/kitchen1.jpg' %}" class="img-fluid rounded shadow">
+        </div>
+
+        <div class="col-md-4">
+            <img src="{% static 'images/interior2.jpg' %}" class="img-fluid rounded shadow">
+        </div>
+
+        <div class="col-md-4">
+            <img src="{% static 'images/interior3.jpg' %}" class="img-fluid rounded shadow">
+        </div>
+    </div>
+
+    <h3 class="mt-5">Why is Interior Design Important?</h3>
+
+    <ul>
+        <li>Creates a comfortable living environment.</li>
+        <li>Improves space utilization.</li>
+        <li>Enhances beauty and functionality.</li>
+        <li>Increases property value.</li>
+        <li>Reflects your personality and lifestyle.</li>
+    </ul>
+
+    <h3 class="mt-4">Our Services Include</h3>
+
+    <ol>
+        <li>Living Room Design</li>
+        <li>Bedroom Design</li>
+        <li>Kitchen Design</li>
+        <li>False Ceiling Design</li>
+        <li>Furniture Planning</li>
+    </ol>
+
+</div>
+
+{% endblock %}

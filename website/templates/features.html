@@ -1,0 +1,181 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<style>
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("{% static 'images/feature-bg.jpg' %}");
+    background-size: cover;
+    background-position: center;
+    background-color: #152f68;
+    color: lightblue;
+    padding: 100px 20px;
+    text-align: center;
+    font-style: oblique;
+}
+
+.section-title {
+    text-align: center;
+    margin: 50px 0 30px;
+    font-weight: bold;
+}
+
+.feature-card {
+    background: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.process-step {
+    background: #111827;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.cta {
+    background: #d4a017;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+</style>
+
+<!-- HERO SECTION -->
+<div class="hero">
+    <h1>Our Features & Services</h1>
+    <p>Complete Architectural Solutions for Your Dream Home</p>
+</div>
+
+<!-- FEATURES -->
+<div class="container">
+
+    <h2 class="section-title">What We Offer</h2>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="feature-card text-center">
+                <div class="icon">📐</div>
+                <h4>Plot Layout Design</h4>
+                <p>We design optimized plot layouts according to land size and rules for maximum space utilization.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="feature-card text-center">
+                <div class="icon">🚶</div>
+                <h4>Site Visit</h4>
+                <p>We visit your site to understand real conditions and prepare accurate planning.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="feature-card text-center">
+                <div class="icon">🏡</div>
+                <h4>2D Floor Planning</h4>
+                <p>Professional and detailed 2D house plans including rooms, kitchen, and structure layout.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="feature-card text-center">
+                <div class="icon">🧭</div>
+                <h4>Vastu Design</h4>
+                <p>We design homes based on Vastu principles for positive energy and balance.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="feature-card text-center">
+                <div class="icon">🎨</div>
+                <h4>Interior Design</h4>
+                <p>Modern interior solutions to make your home beautiful and functional.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="feature-card text-center">
+                <div class="icon">🧑‍🔧</div>
+                <h4>Work Guidance</h4>
+                <p>We guide workers and contractors for proper execution of design.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- WHY CHOOSE US -->
+<div class="container mt-5">
+
+    <h2 class="section-title">Why Choose Us</h2>
+
+    <div class="row text-center g-4">
+
+        <div class="col-md-3">✔ Experienced Designers</div>
+        <div class="col-md-3">✔ Affordable Pricing</div>
+        <div class="col-md-3">✔ 100+ Projects</div>
+        <div class="col-md-3">✔ On-site Support</div>
+
+    </div>
+</div>
+
+<!-- PROCESS -->
+<div class="container mt-5">
+
+    <h2 class="section-title">Our Work Process</h2>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="process-step">
+                <h5>Step 1</h5>
+                <p>Requirement Understanding</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="process-step">
+                <h5>Step 2</h5>
+                <p>Site Visit & Analysis</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="process-step">
+                <h5>Step 3</h5>
+                <p>2D & 3D Design</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- CTA -->
+<div class="container">
+    <div class="cta">
+        <h2>Ready to Build Your Dream Home?</h2>
+        <p>Contact us today for professional architectural design services.</p>
+        <a href="/contact/" class="btn btn-dark mt-3">Contact Us</a>
+    </div>
+</div>
+
+{% endblock %}

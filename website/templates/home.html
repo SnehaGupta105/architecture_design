@@ -1,0 +1,321 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<style>
+.hero{
+    height:90vh;
+    background:
+    linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url('{% static "images/house1.jpg" %}');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:55px;
+    font-weight:bold;
+}
+
+.hero span{
+    color:#d4a017;
+}
+
+.service-row{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+
+
+.service-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.service-card{
+    width:250px;
+    padding:25px;
+    background:white;
+    color:#d4a017;
+    background:black;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+    text-align:center;
+    transition:0.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-5px);
+}
+
+.stat-box{
+    background:#111827;
+    color:white;
+    padding:20px;
+    margin-bottom:15px;
+    border-radius:10px;
+    border-left:5px solid #d4a017;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    transition:0.3s;
+    width:60%;
+}
+
+.stat-box:hover{
+    transform:translateX(8px);
+}
+
+.stat-box h3{
+    color:#d4a017;
+    margin:0;
+    font-size:32px;
+    font-weight:bold;
+}
+
+.stat-box p{
+    margin:3px 0 0;
+}
+
+
+.designer-card{
+    background:#111827;
+    color:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    border-left:5px solid #d4a017;
+}
+
+.designer-card h3{
+    color:#d4a017;
+    margin-bottom:15px;
+}
+
+.designer-card p{
+    line-height:1.8;
+}
+
+
+.designer-card{
+    background: linear-gradient(135deg,#111827,#1f2937);
+    color:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    border-left:5px solid #d4a017;
+}
+
+.designer-card h3{
+    color:#d4a017;
+    margin-bottom:15px;
+}
+
+.designer-card ul{
+    margin-top:15px;
+}
+
+.designer-card li{
+    margin-bottom:8px;
+}
+
+.architecture-section{
+    margin-bottom:10px;
+}
+
+.plot-section{
+    margin-top:10px;
+}
+</style>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+
+        <h4>WE DESIGN YOUR</h4>
+
+        <h1>
+            DREAM HOME <br>
+            <span>WITH PERFECTION</span>
+        </h1>
+
+        <p class="lead">
+            Modern House Design, 2D Plans, 3D Elevation, Interior Design
+        </p>
+
+        <a href="{% url 'designs' %}" class="btn btn-warning btn-lg">
+            View Designs
+        </a>
+
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Services</h2>
+    <div class="service-row">
+
+        <a href="{% url 'twodplans' %}" class="text-decoration-none">
+            <div class="service-card">
+                <h4>2D Plans</h4>
+                <p style="font-size:14px; color:white;"> Customized floor plans for efficient space utilization and comfortable living</p>
+            </div>
+        </a>
+
+        <a href="{% url 'threedelevation' %}" class="text-decoration-none">
+            <div class="service-card">
+                <h4>3D Elevation</h4>
+                <p style="font-size:14px; color:white;">
+                    Realistic 3D exterior designs that help you visualize your dream home's final appearance.
+                </p>
+            </div>
+        </a>
+
+        <a href="{% url 'interiordesign' %}" class="text-decoration-none">
+            <div class="service-card">
+                <h4>Interior Design</h4>
+                <p style="font-size:14px; color:white;">
+                    Modern and functional interior solutions for living rooms, bedrooms, kitchens, and more.
+                </p>
+            </div>
+        </a>
+
+        <a href="{% url 'consultation' %}" class="text-decoration-none">
+            <div class="service-card">
+                <h4>Consultation</h4>
+                <p style="font-size:14px; color:white;">
+                    Expert guidance on house planning, construction, Vastu, and design decisions.
+                </p>
+            </div>
+        </a>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="container py-5">
+
+    <div class="row align-items-center">
+
+        <!-- Left Side Image -->
+        <div class="col-lg-6">
+            <img src="{% static 'images/house6.jpg' %}"
+                 class="img-fluid rounded shadow"
+                 alt="Architecture Design">
+        </div>
+
+        <!-- Right Side Stats -->
+        <div class="col-lg-6">
+
+            <h2 class="mb-4">Why Choose Us?</h2>
+
+            <div class="stat-box">
+                <h3>10+</h3>
+                <p>Years of Experience</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>500+</h3>
+                <p>Projects Completed</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>1000+</h3>
+                <p>Happy Clients</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>50K+</h3>
+                <p>Design Views</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+   <div class="container py-5">
+
+    <!-- Architecture Section -->
+    <div class="row align-items-center architecture-section">
+
+        <div class="col-lg-6">
+            <div class="designer-card">
+                <h3>🏛️ Architecture & Civil Design</h3>
+
+                <p>
+                    We create modern, functional and aesthetically pleasing
+                    architectural designs. Our focus is on proper ventilation,
+                    natural lighting, structural safety and efficient space utilization.
+                </p>
+
+                <p>
+                    Every design is prepared according to client requirements,
+                    plot dimensions and construction standards.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <img src="{% static 'images/house5.jpg' %}"
+                 class="img-fluid rounded shadow"
+                 alt="Architecture Design">
+        </div>
+
+    </div>
+
+    <!-- Plot Layout Section -->
+
+    <div class="row align-items-center plot-section">
+
+    <!-- Left Side Image -->
+    <div class="col-lg-6">
+        <img src="{% static 'images/house9.jpg' %}"
+             class="img-fluid rounded shadow"
+             alt="Plot Layout">
+    </div>
+
+    <!-- Right Side Content -->
+    <div class="col-lg-6">
+
+        <div class="designer-card">
+
+            <h3>📐 Plot Layout & Blueprint</h3>
+
+            <p>
+                We prepare detailed plot layouts according to plot dimensions
+                and client requirements. The blueprint includes room sizes,
+                wall positions, doors, windows, staircases, and utility spaces.
+            </p>
+
+            <p>
+                These drawings help engineers, contractors, and workers
+                understand the structure clearly and reduce mistakes during
+                construction.
+            </p>
+
+            <ul>
+                <li>Accurate Room Dimensions</li>
+                <li>Proper Space Utilization</li>
+                <li>Easy Construction Planning</li>
+                <li>Clear Guidance for Workers</li>
+                <li>Structural Safety & Efficiency</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+{% endblock %}
