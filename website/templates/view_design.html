@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="container py-5">
+    <div class="text-center mb-5">
+        <h1>Our Designs</h1>
+        <p>Explore our architectural and interior design categories.</p>
+    </div>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card shadow text-center p-3">
+                <h3>2D Plans</h3>
+                <p>Explore modern floor plans.</p>
+                <a href="{% url 'twodplans' %}" class="btn btn-primary">
+                    View Designs
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow text-center p-3">
+                <h3>3D Elevation</h3>
+                <p>Beautiful front elevation designs.</p>
+                <a href="{% url 'threedelevation' %}" class="btn btn-primary">
+                    View Designs
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow text-center p-3">
+                <h3>Interior Design</h3>
+                <p>Creative interior ideas.</p>
+                <a href="{% url 'interiordesign' %}" class="btn btn-primary">
+                    View Designs
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow text-center p-3">
+                <h3>Kitchen</h3>
+                <p>Modern kitchen concepts.</p>
+                <a href="{% url 'kitchen' %}" class="btn btn-primary">
+                    View Designs
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow text-center p-3">
+                <h3>Bathroom</h3>
+                <p>Luxury bathroom designs.</p>
+                <a href="{% url 'bathroom' %}" class="btn btn-primary">
+                    View Designs
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow text-center p-3">
+                <h3>Living Room</h3>
+                <p>Elegant living room interiors.</p>
+                <a href="{% url 'livingroom' %}" class="btn btn-primary">
+                    View Designs
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}

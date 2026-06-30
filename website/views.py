@@ -64,6 +64,8 @@ def consultation(request):
 def pricing(request):
     return render(request, 'pricing.html')
 
+def view_design(request):
+    return render(request, 'view_design.html')
 
 def features(request):
     return render(request, 'features.html')

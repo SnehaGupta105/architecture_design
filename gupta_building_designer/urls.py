@@ -19,23 +19,10 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
-from website import views
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('website.urls')),
-    path('2d-plans/', views.twodplans, name='twodplans'),
-    path('3d-elevation/', views.threedelevation, name='threedelevation'),
-    path('features/', views.features, name='features'),
-    path('pricing/', views.pricing, name='pricing'),
-    path('interior-design/', views.interiordesign, name='interiordesign'),
-    path('consultation/', views.consultation, name='consultation'),
     
-    path('contact/', views.contact, name='contact'),
-    path('about/', views.about, name='about'),
-    path('design/kitchen/', views.kitchen, name='kitchen'),
-    path('design/bathroom/', views.bathroom, name='bathroom'),
-    path('design/living-room/', views.livingroom, name='livingroom'),
 ]
 
 if settings.DEBUG:
